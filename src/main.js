@@ -6,6 +6,3 @@ Vue.config.productionTip = false;
 new Vue({
   render: h => h(App)
 }).$mount("#app");
-
-let a = 1 + 1;
-console.log(a);
