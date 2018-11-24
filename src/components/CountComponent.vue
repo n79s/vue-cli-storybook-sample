@@ -1,3 +1,4 @@
+<!-- prettier-ignore -->
 <docs>
 #コンポーネント内のdocs
 
@@ -22,10 +23,10 @@ some command
 </docs>
 
 <template>
-    <section>
-        <input v-model="count"/>
-        <button v-on:click="count += 1">count up!!!</button>
-    </section>
+  <section>
+    <input v-model="count" />
+    <button v-on:click="count += 1;">count up!!!</button>
+  </section>
 </template>
 
 <script>
@@ -36,5 +37,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

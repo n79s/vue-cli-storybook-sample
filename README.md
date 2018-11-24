@@ -28,7 +28,7 @@ tests/unit/counter.spec.js
 npm run test:unit
 ```
 
-### StoryBookのインストール
+### StoryBook のインストール
 
 ```
 #https://storybook.js.org/basics/guide-vue/
@@ -96,7 +96,7 @@ npm run storybook
 
 ```
 
-### StoryBookでVisualTestをやれるようにする
+### StoryBook で VisualTest をやれるようにする
 
 ```
 #https://storybook.js.org/testing/automated-visual-testing/
@@ -137,9 +137,15 @@ describe('CounterComponentTest', () => {
 #テストを実行
 npm run test:visual
 
+#画像の更新はこれ
+npm run test:visual-update
+
+#単体テスト側のスナップショットの更新は↓(途中の--は間違ってるわけじゃない)
+npm run test:unit -- --updateSnapshot
+
 ```
 
-テストの中で書くURLは `npm run storybook` で動かして、アクセスしたURLを以下の感じで指定する。
+テストの中で書く URL は `npm run storybook` で動かして、アクセスした URL を以下の感じで指定する。
 
 ```
 http://localhost:9001/?selectedKind=HelloWorld&selectedStory=HelloWorld&full=0&addons=1&stories=1&panelRight=0
@@ -147,7 +153,7 @@ http://localhost:9001/?selectedKind=HelloWorld&selectedStory=HelloWorld&full=0&a
 http://localhost:9001/iframe.html?selectedKind=CountComponent&selectedStory=CountComponent
 ```
 
-### StoryBookをいい感じにする
+### StoryBook をいい感じにする
 
 ```
 #必要なAddOnのインストール
@@ -186,14 +192,33 @@ function loadStories() {
 }
 configure(loadStories, module);
 
-#画像の更新はこれ
-npm run test:visual-update
-
-#単体テスト側のスナップショットの更新は↓(途中の--は間違ってるわけじゃない)
-npm run test:unit -- --updateSnapshot
 ```
 
-## npmのコマンド
+### ESLint とか
+
+```
+npm install --save-dev prettier
+
+#vscodeでPrettier - Code formatterとESLint入れる。
+#Ctrl+Shift+P→基本設定→setting.json
+{
+  "workbench.list.openMode": "doubleClick",
+  "editor.formatOnSave": true,
+  "prettier.eslintIntegration": true,
+  "javascript.format.enable": false,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/.cache/**": true,
+    "**/dist/**": true
+  }
+}
+
+```
+
+## npm のコマンド
+
 ```
 npm install
 

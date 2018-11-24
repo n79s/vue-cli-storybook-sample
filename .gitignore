@@ -4,6 +4,7 @@ node_modules
 .cache
 __snapshots__
 __image_snapshots__
+/coverage
 # local env files
 .env.local
 .env.*.local

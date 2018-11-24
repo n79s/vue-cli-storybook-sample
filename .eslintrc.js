@@ -1,7 +1,14 @@
 module.exports = {
   root: true,
   env: {
-    node: true
+    node: true,
+    jest: true,
+    browser: true,
+    jquery: true
+  },
+  //puppeteerで使うグローバル変数
+  globals: {
+    page: true
   },
   extends: ["plugin:vue/essential", "@vue/prettier"],
   rules: {

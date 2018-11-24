@@ -42,6 +42,7 @@
     "jest": "^23.6.0",
     "jest-image-snapshot": "^2.7.0",
     "jest-puppeteer": "^3.5.1",
+    "prettier": "^1.15.2",
     "puppeteer": "^1.10.0",
     "start-server-and-test": "^1.7.10",
     "storybook-readme": "^4.0.2",

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Welcome to Your Vue.js App" />
     <CountComponent />
   </div>
 </template>
@@ -14,6 +14,9 @@ export default {
   components: {
     HelloWorld,
     CountComponent
+  },
+  date() {
+    return { a: 1 };
   }
 };
 </script>
