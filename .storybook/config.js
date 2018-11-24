@@ -4,7 +4,7 @@ import Vue from 'vue';
 
 setOptions({
   name: 'Vue Cli StoryBook Sample',
-  url: 'https://github.com/n79s/vue-npm-module-sample',
+  url: 'https://github.com/n79s/vue-cli-storybook-sample',
   goFullScreen: false,
   showLeftPanel: true,
   showDownPanel: true,
